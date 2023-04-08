@@ -1,0 +1,7 @@
+Given two (singly) Linked list, determine if the two lists intersect. Rturn the intersecting node. Note that the intersection  is defined based on reference, not value.
+That is , if the Kth node of the first linked list is the exact same node(by reference) as the Jth node of the second linked list, then they are intersecting.
+
+Example:
+linkedList1 = 7->7->9->11->14
+linkedList2 = 8->6->0->2->11->14
+ans:- 11
