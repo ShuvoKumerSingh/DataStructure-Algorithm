@@ -30,7 +30,7 @@ class LinkedList:
             self.tail = new_node
         self.length += 1
     
-  def reverse(self):
+    def reverse(self):
         current_node = self.head
         prev_node = None
         while current_node is not None:
@@ -40,7 +40,16 @@ class LinkedList:
             current_node = temp
         self.head,self.tail = self.tail,self.head
         return self.__str__()
-
+    #Using Recursive Method
+    def reverse(self,head):
+        if head == None or head.next == None:
+            return head
+        newHead = reverse(head.next)
+        headNext = head.next
+        headNext.next = head
+        head.next = None
+        return newHead
+            
 
 
 
