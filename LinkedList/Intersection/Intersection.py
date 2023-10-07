@@ -1,4 +1,24 @@
 from LinkedList import LinkedListSolution,Node
+'''
+First Approach where a is run n+x+(m+x)
+and b is run m+x+(n+x)
+'''
+def intersection(llA,llB):
+    a = llA
+    b = llB
+    while a!=b:
+        if a is None:
+            a = llB
+        else:
+            a=a.next
+        if b is None:
+            b = llA
+        else:
+            b = b.next
+    return a
+'''
+Another Approach which list is larger
+'''
 def intersction(llA,llB):
     if llA.tail is not llB.tail:
         return False
