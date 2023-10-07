@@ -1,3 +1,6 @@
+'''
+Describe how you could use a single python list to Implement three stacks
+'''
 class Stack:
     def __init__(self,stack_size):
         self.number_of_stack = 3
